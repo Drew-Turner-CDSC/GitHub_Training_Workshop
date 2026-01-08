@@ -22,8 +22,8 @@ linelist <- linelist %>%
   mutate(
     # Gender
     gender_std = case_when(
-      str_to_lower(str_trim(gender)) %in% c("male","m","man") ~ "Male",
-      str_to_lower(str_trim(gender)) %in% c("female","f","fem","woman") ~ "Female",
+      str_to_lower(str_trim(gender)) %in% c("male","m","man","1") ~ "Male",
+      str_to_lower(str_trim(gender)) %in% c("female","f","fem","woman","2") ~ "Female",
       str_trim(gender) == "" ~ NA_character_,
       TRUE ~ "Other"
     ),
