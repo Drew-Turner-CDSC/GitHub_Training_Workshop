@@ -82,7 +82,7 @@ linelist <- linelist %>%
 # ---- Case definition ----
 linelist <- linelist %>%
   mutate(
-    any_symptom = sick_std | diarrhoea | abdominal_pain_std | headache_std | fatigue_std,
+    any_symptom = sick_std | diarrhoea,
     case = any_symptom & !is.na(hours_since_party) & hours_since_party >= 0 & hours_since_party <= 144
   )
 
