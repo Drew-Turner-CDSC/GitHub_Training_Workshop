@@ -6,6 +6,7 @@
 # ---- Load packages ----
 
   library(tidyverse)
+  library(skimr)
 
 
 # ---- Read data ----
