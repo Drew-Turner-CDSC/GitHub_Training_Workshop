@@ -7,6 +7,7 @@
 
   library(tidyverse)
   library(skimr)
+  library(odbc)
 
 
 # ---- Read data ----
